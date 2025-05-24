@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riyansh Pahuja - Profile</title>
+    <link rel="stylesheet" href="riyansh-profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main class="profile-container">
+        <header class="profile-header">
+            <img src="profile.pic" alt="Riyansh Pahuja" class="profile-pic glow-hover">
+            <div class="profile-info">
+                <h1>Riyansh Pahuja</h1>
+                <h2>6th Grade Student</h2>
+                <h3>Venkateshwar International School</h3>
+            </div>
+        </header>
+        <div class="top-description">
+            <p><strong>Programming Enthusiast:</strong> Riyansh is a passionate young coder who loves to solve problems, build creative projects, and explore the world of technology. Whether it's making games, designing websites, or learning new programming languages, he's always eager to take on new challenges and share his knowledge with others. Riyansh believes that coding is not just a skill, but a superpower for the future!</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header"><i class="fas fa-user"></i> <span>About Me</span></button>
+                <div class="accordion-panel">
+                    <p>Hello! My name is <strong>Riyansh Pahuja</strong>, and I am a 6th grade student at Venkateshwar International School. I am deeply passionate about technology and programming, and I love to explore new ideas and concepts every day. My curiosity drives me to learn not just in the classroom, but also through hands-on projects and online communities. I believe in sharing knowledge, making friends, and always staying positive and enthusiastic about learning!</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header"><i class="fas fa-star"></i> <span>My Hobbies</span></button>
+                <div class="accordion-panel">
+                    <div class="hobby-block">
+                        <h4><i class="fas fa-swimmer"></i> Swimming</h4>
+                        <p>Swimming is not just a sport for me—it's a way to stay healthy, energetic, and focused. I enjoy the feeling of gliding through water and challenging myself to improve my speed and technique. It's also a great way to relax and have fun with friends during the summer.</p>
+                    </div>
+                    <div class="hobby-block">
+                        <h4><i class="fas fa-laptop-code"></i> Coding</h4>
+                        <p>Coding is my favorite hobby! I love building games, websites, and experimenting with new programming languages. Every project is a new adventure, and I enjoy solving problems and seeing my ideas come to life on the screen.</p>
+                    </div>
+                    <div class="hobby-block">
+                        <h4><i class="fas fa-film"></i> Watching Movies</h4>
+                        <p>Movies inspire me with their stories and creativity. I enjoy watching a variety of genres, from animated adventures to science fiction. It's a great way to relax and sometimes even learn new things!</p>
+                    </div>
+                    <div class="hobby-block">
+                        <h4><i class="fas fa-futbol"></i> Playing with Friends</h4>
+                        <p>Spending time with friends is important to me. We play football, board games, and sometimes just talk about our favorite topics. These moments help me build strong friendships and learn teamwork.</p>
+                    </div>
+                    <div class="hobby-block">
+                        <h4><i class="fas fa-comments"></i> Talking</h4>
+                        <p>I love to talk and share ideas with people around me. Whether it's discussing a new coding project or just chatting about daily life, I believe communication is key to learning and growing together.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-header"><i class="fab fa-youtube"></i> <span>My YouTube Channel</span></button>
+                <div class="accordion-panel">
+                    <p>Welcome to my YouTube channel, <strong>Riyansh Insights</strong>! Here, I share tutorials, fun projects, and insights about coding, technology, and my learning journey. My goal is to inspire other kids to start coding and to make learning technology fun and accessible for everyone.</p>
+                    <p>On my channel, you'll find step-by-step guides for beginners, creative coding challenges, and behind-the-scenes looks at how I build my favorite projects. I also review cool tech gadgets, share tips for young programmers, and sometimes collaborate with friends on exciting group projects.</p>
+                    <p>If you're curious about technology, want to learn how to code, or just enjoy watching fun and educational videos, make sure to check out my channel. Don't forget to subscribe and join me on this amazing journey of discovery and creativity!</p>
+                    <a href="https://www.youtube.com/@RiyanshInsights" target="_blank" class="youtube-link glow-hover">
+                        <i class="fab fa-youtube"></i> Riyansh Insights
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+    // Accordion functionality
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function() {
+            const panel = this.nextElementSibling;
+            this.classList.toggle('open');
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                document.querySelectorAll('.accordion-panel').forEach(p => p.style.maxHeight = null);
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+        });
+    });
+    </script>
+</body>
+</html> 
